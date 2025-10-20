@@ -33,19 +33,19 @@ export default function Navbar() {
           <div
             className={`flex items-center justify-center rounded-2xl p-1.5 transition-all ${
               scrolled
-                ? "bg-gradient-to-br from-[#00D0B0]/15 to-transparent shadow-sm"
+                ? "bg-gradient-to-br from-[#6E76B4]/15 to-transparent shadow-sm"
                 : "bg-gradient-to-br from-white/20 to-white/5 shadow-md"
             } ring-1 ring-white/20`}
           >
             <Image
               src="/log.png"
               alt="Revive Wellness Center"
-              width={80}
-              height={80}
+              width={100}
+              height={100}
               priority
-              sizes="(max-width: 768px) 48px, (max-width: 1024px) 64px, 80px"
+              sizes="(max-width: 768px) 60px, (max-width: 1024px) 80px, 100px"
               className={`${
-                scrolled ? "h-10 w-10 md:h-12 md:w-12 lg:h-12 lg:w-12" : "h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                scrolled ? "h-12 w-12 md:h-14 md:w-14 lg:h-16 lg:w-16" : "h-14 w-14 md:h-16 md:w-16 lg:h-20 lg:w-20"
               } rounded-lg object-cover transition-[width,height] duration-300`}
             />
           </div>
@@ -64,9 +64,9 @@ export default function Navbar() {
                 href={href}
                 className={`relative text-[0.95rem] lg:text-[1rem] font-semibold tracking-wide transition-colors ${
                   scrolled
-                    ? "text-neutral-900 hover:text-teal-600"
+                    ? "text-[#2E2E4D] hover:text-[#6E76B4]"
                     : "text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.4)] hover:text-white"
-                } after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#00D0B0] after:transition-all after:duration-300 hover:after:w-full`}
+                } after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-[#6E76B4] after:transition-all after:duration-300 hover:after:w-full`}
               >
                 {label}
               </Link>
@@ -80,11 +80,11 @@ export default function Navbar() {
             href="tel:+96171709133"
             className={`inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm transition-colors shadow-sm ${
               scrolled
-                ? "bg-[#00D0B0] text-white hover:bg-teal-500"
+                ? "bg-[#6E76B4] text-white hover:bg-[#5A6299]"
                 : "bg-white/15 text-white hover:bg-white/25"
             }`}
           >
-            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-[#00D0B0]">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-white text-[#6E76B4]">
               <Phone size={16} />
             </span>
             <span>961 71 709133</span>
@@ -142,7 +142,7 @@ export default function Navbar() {
             </ul>
             <a
               href="tel:+96171709133"
-              className="inline-flex items-center gap-2 rounded-full bg-[#00D0B0] px-5 py-2.5 text-base text-white shadow-sm"
+              className="inline-flex items-center gap-2 rounded-full bg-[#6E76B4] px-5 py-2.5 text-base text-white shadow-sm"
             >
               <Phone size={16} /> <span>961 71 709133</span>
             </a>
